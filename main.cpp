@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <iomanip>
 using namespace std;
 
 double f(double y){
@@ -8,7 +7,6 @@ double f(double y){
 }
 
 int main() {
-    int counter=0;
     double a=0, b=0, c=0, x=0, err=0;
     do{
         cout<<"inserire estremi"<<endl;
@@ -34,6 +32,5 @@ int main() {
     int r=x*10000;
     double l=(float)r/10000;
     cout<<l<<endl;
-    cout<<counter<<endl;
     return 0;
 }
