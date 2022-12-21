@@ -31,7 +31,9 @@ int main() {
         err=abs((b-a)/2);
         counter++;
     }while(err>=0.000001);
-    cout<<setprecision(4)<<x<<endl;
+    int r=x*10000;
+    double l=(float)r/10000;
+    cout<<l<<endl;
     cout<<counter<<endl;
     return 0;
 }
