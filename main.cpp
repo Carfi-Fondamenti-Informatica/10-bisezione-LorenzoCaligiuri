@@ -8,10 +8,12 @@ double f(double y){
 }
 
 int main() {
+    int counter=0;
     double a=0, b=0, c=0, x=0, err=0;
     do{
         cout<<"inserire estremi"<<endl;
         cin>>a>>b;
+        counter++;
     }while(f(a)*f(b)>=0);
     if(f(a)<f(b)){
         c=a;
@@ -29,9 +31,9 @@ int main() {
         }
         err=abs((b-a)/2);
     }while(err>=0.000001);
-    /*int r=x*10000;
+    int r=x*10000;
     double l=(float)r/10000;
-    cout<<l<<endl;*/
-    cout<<setprecision(4)<<x<<endl;
+    cout<<l<<endl;
+    cout<<counter<<endl;
     return 0;
 }
